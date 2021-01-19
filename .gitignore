@@ -1,0 +1,5 @@
+/node_modules/.yarn-integrity
+
+# devDependencies
+/node_modules/prettier/
+/node_modules/.bin/prettier
