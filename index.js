@@ -80,7 +80,7 @@ async function uploadFilesAsync({
       console.log(`note: Uploading: ${localFile}`);
       await client.put(
         localFile,
-        path.join(remoteDirectory, path.basename(localFile)),
+        path.posix.join(remoteDirectory, path.basename(localFile)),
         { mode: 0o644 }
       );
     }
