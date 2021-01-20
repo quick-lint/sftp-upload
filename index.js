@@ -129,6 +129,16 @@ function removeDuplicates(items) {
   return [...new Set(items)];
 }
 
+if (typeof Array.prototype.flat !== "function") {
+  Array.prototype.flat = function flat() {
+    let result = [];
+    for (let items of this) {
+      result.push(...items);
+    }
+    return result;
+  };
+}
+
 mainAsync()
   .then(() => {
     process.exit(0);
