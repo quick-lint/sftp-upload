@@ -7,6 +7,16 @@ GitHub Action to upload files to an SFTP server.
 only. No stability is guaranteed or implied. Use at your own
 risk.
 
+## Updating dependencies
+
+After changing `package.json`, run the following command:
+
+```bash
+yarn install --ignore-optional
+```
+
+Commit all changes to `node_modules/`, including added and removed files.
+
 ## Manual testing
 
 You can test locally from a Linux machine by running the
