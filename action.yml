@@ -24,4 +24,4 @@ inputs:
   user: {required: true}
 runs:
   main: index.js
-  using: node12
+  using: node16
